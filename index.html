@@ -19,7 +19,7 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 	</head>
 	<body class="demo-1 loading">
 		<main>
-			<div class="message">Please view this demo on a desktop to see the effect.</div>
+			<div class="message">Xem tại máy tính để có hiệu ứng nhé em</div>
 			<div class="frame">
 			</div>
 			<div class="content">
@@ -39,13 +39,37 @@ supportsCssVars() || alert("Please view this demo in a modern browser that suppo
 					<span>Yến Trần (Bé điệu)</span>
 				</h2>
 				<h2 class="content__title no-select">
-					<span class="content__title-sub">Chúc em 8/3 luôn luôn xinh đẹp❤️🌸</span>
+					<span class="content__title-sub">🌸Chúc em 8/3 luôn luôn xinh đẹp🌸</span>
 				</h2>
 			</div>
 		</main>
         <svg class="cursor" width="80" height="80" viewBox="0 0 80 80">
 			<circle class="cursor__inner" cx="40" cy="40" r="20"></circle>
 		</svg>
+
+		<!-- Music Button & Player -->
+		<button class="music-btn" id="musicToggle" title="Bật/Tắt nhạc">
+			<span class="music-note">🎵</span>
+		</button>
+		<audio id="bgMusic" src="./music.mp3" loop preload="auto"></audio>
+
+		<!-- Lightbox -->
+		<div class="lightbox" id="lightbox">
+			<div class="lightbox__overlay"></div>
+			<button class="lightbox__close" id="lightboxClose">&times;</button>
+			<button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev">&#10094;</button>
+			<button class="lightbox__nav lightbox__nav--next" id="lightboxNext">&#10095;</button>
+			<div class="lightbox__content">
+				<img class="lightbox__img" id="lightboxImg" src="" alt="">
+			</div>
+			<div class="lightbox__bottom">
+				<div class="lightbox__counter" id="lightboxCounter"></div>
+				<div class="lightbox__thumbs" id="lightboxThumbs"></div>
+			</div>
+		</div>
+
 		<script src="./script.js"></script>
+		<script src="./music.js"></script>
+		<script src="./lightbox.js"></script>
 	</body>
 </html>
